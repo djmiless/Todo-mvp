@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="clear">
+                <i class="fa fa-refresh"></i>
+            </div>
+            <div class="alarm-sec">
+              <a href="#"> <span class="material-icons alarmBtn">alarm  </span></a>
+              <button class="button set-alarm1">Set alarm</button>
+            </div>
+            <div id="date"></div>
+
+            
+        </div>
+
+        <div class="content">
+            <ul id="list">
+                <!-- <li class="item">
+                     <i class="fa fa-circle-thin co" job="complete" id="0"></i>
+                    <p class="text">Drink Coffee</p>
+                    <i class="fa fa-trash-o de" job="delete" id="0"></i> 
+                </li> -->
+            </ul>
+
+            
+
+            <!-- modal alarm -->
+
+            <section class="container1">
+                <div id="clock"></div>
+                <input  class="alarmTime" type="datetime-local">
+                <div class="controls">
+                    <button class="button set-alarm">Set alarm</button>
+                    <button class="button clear-alarm">Clear alarm</button>
+                </div>
+                <button class="button close-btn">Close alarm</button>
+            </section>
+            </div>
+
+            <div class="add-to-do">
+                <i class="fa fa-plus-circle"></i> 
+                <input type="text" id="input" placeholder="Add a to-do">
+                <a href="#"><span class="material-icons enterBtn">send</span></a>
+            </div>
+        
+        </div>
+
+
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

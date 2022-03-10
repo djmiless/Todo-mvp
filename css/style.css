@@ -1,0 +1,232 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: "Titillium Web", sans-serif;
+}
+
+/* ------------ container ------------ */
+.container {
+  padding: 30px;
+  width: 380px;
+  margin: 50px auto;
+}
+
+/* ------------ header ------------ */
+.header {
+  width: 450px;
+  height: 200px;
+  background-image: url("../img/moon-31665.png");
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+
+span.alarmBtn {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  position: absolute;
+  right: 240px;
+  top: 50px;
+  font-size: 60px;
+}
+.clear {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.clear i {
+  font-size: 30px;
+  color: #fff;
+}
+.clear i:hover {
+  cursor: pointer;
+  text-shadow: 1px 3px 5px #000;
+  transform: rotate(45deg);
+}
+#date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 25px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+/* ------------ content ------------ */
+.content {
+  width: 450px;
+  height: 350px;
+  max-height: 350px;
+  background-color: #fff;
+  overflow: auto;
+  position: relative;
+}
+.content::-webkit-scrollbar {
+  display: none;
+}
+.content ul {
+  padding: 0;
+  margin: 0;
+}
+.item {
+  width: 450px;
+  height: 45px;
+  min-height: 45px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.item i.co {
+  position: absolute;
+  font-size: 25px;
+  padding-left: 5px;
+  left: 15px;
+  top: 10px;
+}
+.item i.co:hover {
+  cursor: pointer;
+}
+.fa-check-circle {
+  color: #6eb200;
+}
+.item p.text {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  left: 50px;
+  top: 10px;
+  background-color: #fff;
+  max-width: 285px;
+}
+.lineThrough {
+  text-decoration: line-through;
+  color: #ccc;
+}
+.item i.de {
+  position: absolute;
+  font-size: 25px;
+  right: 15px;
+  top: 10px;
+}
+.item i.de:hover {
+  color: #af0000;
+  cursor: pointer;
+}
+/* ------------ add item ------------ */
+.add-to-do {
+  position: relative;
+  width: 430px;
+  height: 40px;
+  background-color: #fff;
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.add-to-do span {
+  position: absolute;
+  font-size: 40px;
+  color: #4162f6;
+  right: 10px;
+}
+.add-to-do i {
+  position: absolute;
+  font-size: 40px;
+  color: #4162f6;
+}
+
+.add-to-do input {
+  position: absolute;
+  left: 50px;
+  height: 35px;
+  width: 335px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+/* modal */
+
+.container1 {
+  /* min-height: 100vh; */
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /* border-radius: 10px; */
+  overflow: auto; /* Enable scroll if needed */
+  /* background-color: rgb(0, 0, 0); /* Fallback color */
+  /* background-color: rgba(0, 0, 0, 0.1); Black w/ opacity */
+  background-color: whitesmoke;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#clock {
+  font-family: "Orbitron", sans-serif;
+  font-size: 3vw;
+  background-image: linear-gradient(
+    180deg,
+    rgba(99, 253, 136, 1) 0%,
+    rgba(51, 197, 142, 1) 50%,
+    rgba(39, 97, 116, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.controls {
+  margin-top: 16px;
+}
+
+.button {
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.set-alarm {
+  background-color: #498afb;
+}
+
+.clear-alarm {
+  background-color: yellowgreen;
+}
+
+.close-btn {
+  background-color: #ff3860;
+  margin-top: 10px;
+}
+
+.set-alarm1 {
+  background-color: whitesmoke;
+  color: black;
+  position: absolute;
+  right: 200px;
+  top: 110px;
+}
+
+/* .alarm-sec {
+  position: absolute;
+} */
