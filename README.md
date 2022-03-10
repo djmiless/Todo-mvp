@@ -1,0 +1,2 @@
+# Todo-mvp
+This is a software where users can set a to-do list and consequently set an alarm which will notify the user when it matches the current time, any item swiped to the left will be deleted, in addition to the functionality of the delete button the enter key on your keyboard or the enter button can be used to display the to-do list input, it was made persistent with the help of  local storage and JAVASCRIPT
